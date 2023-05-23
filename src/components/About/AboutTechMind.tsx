@@ -36,12 +36,12 @@ const AboutTechMind = ({ name, list }: ParamsType) => {
           <>
             <span className="text-black">
               {name[currentLanguage(isEnglish)]}
-            </span>{" "}
+            </span>
             Tech Mind
           </>
         )}
       </h1>
-      <ul className="list-unstyled">
+      <ul className="list-unstyled p-0">
         {list.map((ele, i) => (
           <li
             data-aos={`fade-${i % 2 === 0 ? "right" : "left"}`}
